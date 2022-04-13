@@ -1,18 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-:root{
+:root {
     --primary-color: #73d700;
+    --primary-color-dark: #5CAC00;
     --secondary-color: #ffad00;
-    --secondary-color-dark:#c68600;
+    --secondary-color-dark: #c68600;
 }
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header_inner {
+    max-width: 1244px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-brand img {
+    width: 116px;
+}
+
+.header-navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-navbar ul li {
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    margin: 0 15px;
+}
+
+.header-widgets {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-widgets--users {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-widgets--users span {
+    font-size: 2.2rem;
+}
+
+/* BANNER CONTAINER */
+.banner-container {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/bus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-container picture {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2), rgba(0, 0, 0, .46));
+}
+
+.banner-container--content {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    top: -150px;
+    position: relative;
+}
+
+.banner-container--content h1{
+    font-size: 2rem;
+    letter-spacing: .05rem;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.search{
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid #E1E1E1;
+    border-radius:5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.border {
+    border: 1px solid red;
 }
