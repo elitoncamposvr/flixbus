@@ -47,18 +47,20 @@
                         <form action="#">
                             <div class="search-content--radios">
                                 <div class="radio">
-                                    <label for="radio-roundtrip">
-                                        <input type="radio" value="going" name="radio-roundtrip" id="radio-roundtrip">
-                                        <span class="material-icons">
-                                            radio_button_unchecked
+                                    <label for="radio-oneway">
+                                        <input type="radio" value="oneway" name="radio-oneway" id="radio-oneway"
+                                            checked>
+                                        <span class="material-icons oneway active">
+                                            radio_button_checked
                                         </span>
                                         <span>Ida</span>
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label for="radio-roundtrip">
-                                        <input type="radio" value="round-trip" name="radio-roundtrip" id="round-trip">
-                                        <span class="material-icons">
+                                        <input type="radio" value="roundtrip" name="radio-roundtrip"
+                                            id="radio-roundtrip">
+                                        <span class="material-icons roundtrip no-active">
                                             radio_button_unchecked
                                         </span>
                                         <span>Ida e volta</span>
@@ -66,19 +68,269 @@
                                 </div>
                             </div>
                             <div class="search-content--inputs">
-                                Inputs in line blz
+                                <div class="inputs-city">
+                                    <div class="departure-city">
+                                        <div class="inputs-label">
+                                            <label for="departure-city--field-input">De</label>
+                                        </div>
+                                        <div class="departure-city--field">
+                                            <input type="text" name="departure-city--field"
+                                                id="departure-city--field-input" placeholder="Saída">
+                                            <div class="presentation">
+                                                <span class="material-icons">
+                                                    place
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrival-city">
+                                        <div class="inputs-label">
+                                            <label for="arrival-city--field">Para</label>
+                                        </div>
+                                        <div class="arrival-city--field">
+                                            <input type="text" name="arrival-city--field" id="arrival-city--field"
+                                                placeholder="Chegada">
+                                            <div class="presentation">
+                                                <span class="material-icons">
+                                                    place
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputs-date">
+                                    <div class="departure-city">
+                                        <div class="inputs-label">
+                                            <label for="departure-date--field-input">De</label>
+                                        </div>
+                                        <div class="departure-date--field">
+                                            <input type="date" name="departure-date--field"
+                                                id="departure-date--field-input" placeholder="Saída">
+                                            <div class="presentation">
+                                                <span class="material-icons">
+                                                    calendar_month
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrival-city">
+                                        <div class="inputs-label">
+                                            <label for="arrival-date--field">Para</label>
+                                        </div>
+                                        <div class="arrival-date--field">
+                                            <input type="date" name="arrival-date--field" id="arrival-date--field"
+                                                placeholder="Chegada" disabled>
+                                            <div class="presentation">
+                                                <span class="material-icons">
+                                                    calendar_month
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputs-btn">
+                                    <div>&nbsp;</div>
+                                    <button class="btn-search">Procurar</button>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section-module">
+            <div class="service-menu">
+                <div class="service-menu--grid">
+                    <span class="material-icons">
+                        confirmation_number
+                    </span>
+                    <p>Gerenciar minha reserva</p>
+                </div>
+                <div class="service-menu--grid">
+                    <span class="material-icons">
+                        access_time
+                    </span>
+                    <p>Acompanhe sua viagem</p>
+                </div>
+                <div class="service-menu--grid">
+                    <span class="material-icons">
+                        help_outline
+                    </span>
+                    <p>Ajuda</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="central-module--grid">
+                <div class="central-module--grid-item">
+                    <span class="material-icons">
+                        gpp_good
+                    </span>
+                    <h2>Nossas medidas de segurança</h2>
+                    <p>Garantimos um alto padrão de higiene para tornar sua viagem mais segura e tranquila.</p>
+                    <a href="#">
+                        Obtenha mais informações
+                    </a>
+                </div>
+                <div class="central-module--grid-item">
+                    <span class="material-icons">
+                        accessible
+                    </span>
+                    <h2>Ônibus modernos e confortáveis</h2>
+                    <p>Aproveite a melhor relação custo-benefício viajando com nossos confortáveis ônibus de última
+                        geração.</p>
+                    <a href="#">
+                        Obtenha mais informações
+                    </a>
+                </div>
+                <div class="central-module--grid-item">
+                    <span class="material-icons">
+                        map
+                    </span>
+                    <h2>Rede em crescimento</h2>
+                    <p>Estamos ampliando nossa rede para que você possa conhecer o Brasil viajando com a FlixBus.</p>
+                    <a href="#">
+                        Obtenha mais informações
+                    </a>
+                </div>
+                <div class="central-module--grid-item">
+                    <span class="material-icons">
+                        spa
+                    </span>
+                    <h2>Viagens ecologicamente corretas</h2>
+                    <p>Escolha a maneira verde de viajar, viaje com a FlixBus.</p>
+                    <a href="#">
+                        Obtenha mais informações
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="section-module">
+            <div class="section-map">
+                <img src="assets/images/map-teaser-flixbus-br.jpg" alt="">
+                <div class="section-map--content">
+                    <h2>Descubra a forma mais fácil de viajar</h2>
+                    <p>Nascida na Europa e mundialmente reconhecida, a FlixBus está expandindo sua rede no Brasil.</p>
+                    <p>Escolha entre muitos novos destinos e viaje tranquilamente com a FlixBus.</p>
+                    <span>
+                        <a href="#">Descubra nossos destinos</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="section-text">
+            <div class="section-text--rich">
+                <h3>
+                    Conheça o Brasil a preços imbatíveis em confortáveis viagens de ônibus
+                </h3>
+                <p>
+                    Decidiu fazer uma viagem de fim de semana de última hora? Planejando as férias com a família ou
+                    amigos? Descubra a nova maneira de viajar pelo Brasil a bordo dos ônibus verdes de nossos parceiros.
+                </p>
+                <p>
+                    Com <b>preços imbatíveis, assentos confortáveis, Wi-Fi gratuito e entretenimento a bordo</b>, viajar
+                    de ônibus nunca foi tão fácil. Chegou a hora de visitar nossos <a href="#">melhores destinos</a> ! A
+                    FlixBus tem as viagens de ônibus interestaduais que você procura.
+                </p>
+                <p>
+                    <b>Proporcionamos uma viagem sem estresse:</b> graças às informações das paradas em tempo real,
+                    horários atualizados, staff prestativo e motoristas experientes e gentis, você não precisa se
+                    preocupar com nada. Planeje sua viagem de ônibus com a gente e embarque a bordo com toda a
+                    tranquilidade.
+                </p>
+                <h3>
+                    FlixBus: a escolha inteligente para viajar
+                </h3>
+                <p>
+                    O objetivo da FlixBus é disponibilizar um <b>serviço acessível e fácil de usar.</b> Oferecemos
+                    sempre as melhores ofertas, além de uma experiência de viagem segura e agradável.
+                </p>
+                <p>
+                    Suas passagens low-cost estão a apenas alguns cliques de distância em nosso <a href="#">App</a> ou
+                    site. Economize dinheiro com os melhores preços, ganhe tempo com nossas linhas diretas e ajude o
+                    meio ambiente viajando em um dos meios de transporte mais ecológicos.
+                </p>
+                <p>
+                    Receba ofertas exclusivas e as últimas novidades seguindo nossa página no <a href="#">Facebook</a>.
+                    Chegue primeiro com a FlixBus!
+                </p>
+            </div>
+        </section>
+        <hr class="divider">
     </main>
 
     <footer>
-
+        <section class="links">
+            <div class="links-item">
+                <h4>Ônibus</h4>
+                <a href="#">Todos os destinos</a>
+                <a href="#">Mapa interativo</a>
+                <a href="#">Aplicativo móvel</a>
+                <a href="#">Brasil</a>
+            </div>
+            <div class="links-item">
+                <h4>Destinos</h4>
+                <a href="#">Ônibus de São Paulo</a>
+                <a href="#">Ônibus de Rio de Janeiro</a>
+                <a href="#">Ônibus de Belo Horizonte</a>
+                <a href="#">Ônibus de São Paulo - Rio de Janeiro</a>
+                <a href="#">Ônibus de São Paulo - Belo Horizonte</a>
+            </div>
+            <div class="links-item">
+                <h4>Flixbus</h4>
+                <a href="#">Sobre nós</a>
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Imprensa</a>
+                <a href="#">Condições Gerais de Vendas e Reservas</a>
+                <a href="#">Condições Gerais de Transporte</a>
+                <a href="#">Créditos das fotos</a>
+                <a href="#">Sustentabilidade</a>
+            </div>
+            <div class="links-item">
+                <h4>Atendimento ao cliente</h4>
+                <a href="#">Ajuda & Fale Conosco</a>
+                <a href="#">Nossos serviços para você</a>
+                <a href="#">Gerenciar minha reserva</a>
+                <a href="#">Bagagem</a>
+                <a href="#">Escolher assento</a>
+                <a href="#">Gratuidade e desconstos sociais</a>
+            </div>
+        </section>
+        <section class="social">
+            <div>
+                <h4>Flix App</h4>
+                <div class="mobile-app-image">
+                    <img src="assets/images/google-play.png" alt="">
+                    <img src="assets/images/app-store.png" alt="">
+                </div>
+            </div>
+            <div>
+                <h4>Flix em:</h4>
+                <div class="social-icons">
+                    <img src="assets/images/facebook.svg" alt="">
+                    <img src="assets/images/insta.svg" alt="">
+                    <img src="assets/images/youtube.svg" alt="">
+                    <img src="assets/images/linkedin.svg" alt="">
+                    <img src="assets/images/twitter.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="copyright">
+            <div class="copyright-links">
+                <a href="#">Política de privacidade</a>
+                <a href="#">Direitos dos passageiros</a>
+                <a href="#">Informações legais</a>
+                <a href="#">Promoção</a>
+                <a href="#">Alterar as configurações de cookies</a>
+            </div>
+            <div class="copyright-text">
+                © 2022 FlixBus Transporte e Tecnologia do Brasil Ltda.
+            </div>
+        </section>
     </footer>
-
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
